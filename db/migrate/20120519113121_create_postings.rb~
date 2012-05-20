@@ -1,0 +1,11 @@
+class CreatePostings < ActiveRecord::Migration
+  def change
+    create_table :postings do |t|
+      t.column :id , :integer
+      t.column :writer_id, :integer
+      t.column :message, :string
+      t.column :message_id, :integer
+      t.timestamps
+    end
+  end
+end

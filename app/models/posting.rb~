@@ -1,0 +1,4 @@
+class Posting < ActiveRecord::Base
+  belongs_to :writer
+  accepts_nested_attributes_for :writer
+end
